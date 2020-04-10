@@ -2,8 +2,10 @@
 
 linkPage= "https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic"
 linkPath = '//*[@id="thetable"]'
+#El id=thetable es el código particular de la tabla de datos en wikipedia
 
 library(htmltab)
+#Estamos creando un nuevo objeto con el nombre "coronavirus"
 coronavirus = htmltab(doc = linkPage, which =linkPath, rm_nodata_cols = F) 
 
 ###Limpieza
